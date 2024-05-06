@@ -52,7 +52,25 @@
         </header>
         <section class="projects">
             <div id="project-1">
-                <img src="public/img/uploads/rw.jpg">
+                <img src="public/uploads/<?= $project->getImage() ?>">
+                <div>
+                    <h2><?= $project->getTitle() ?></h2>
+                    <p><?= $project->getDescription() ?></p>
+                    <div class="social-section">
+                        <div>
+                            <i class="fas fa-heart"></i>
+                            <span>600</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-minus-square"></i>
+                            <span>101</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="project-1">
+                <img src="public/uploads/rw.jpg">
                 <div>
                     <h2>Title</h2>
                     <p>description</p>
@@ -70,7 +88,7 @@
                 </div>
             </div>
             <div id="project-1">
-                <img src="public/img/uploads/rw.jpg">
+                <img src="public/uploads/rw.jpg">
                 <div>
                     <h2>Title</h2>
                     <p>description</p>
@@ -88,25 +106,7 @@
                 </div>
             </div>
             <div id="project-1">
-                <img src="public/img/uploads/rw.jpg">
-                <div>
-                    <h2>Title</h2>
-                    <p>description</p>
-                    <div class="social-section">
-                        <div>
-                            <i class="fas fa-heart"></i>
-                            <span>600</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-minus-square"></i>
-                            <span>101</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div id="project-1">
-                <img src="public/img/uploads/rw.jpg">
+                <img src="public/uploads/rw.jpg">
                 <div>
                     <h2>Title</h2>
                     <p>description</p>

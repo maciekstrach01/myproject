@@ -61,3 +61,13 @@ section{
     margin: 0; 
 }
 
+section.project-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+project-form>form {
+    display: flex;
+    flex-direction: column;
+}

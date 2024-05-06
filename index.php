@@ -10,5 +10,5 @@ Routing::get('index','DefaultController');
 Routing::get('projects','DefaultController');
 // Routing::get('projects','DefaultController');
 Routing::post('login','SecurityController');
-
+Routing::post('addProject','ProjectController');
 Routing::run($path);
