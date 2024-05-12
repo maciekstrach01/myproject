@@ -8,7 +8,7 @@
 <body>
     <div class="base-container">
       <nav>
-        <img src="public/img/logo.svg">
+        <img src="public/img/logo2.svg">
         <ul>
             <li>
                 <i class="fa-solid fa-diagram-project"></i>

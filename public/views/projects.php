@@ -8,7 +8,7 @@
 <body>
     <div class="base-container">
       <nav>
-        <img src="public/img/logo.svg">
+        <img src="public/img/logo2.svg">
         <ul>
             <li>
                 <i class="fa-solid fa-diagram-project"></i>
@@ -43,19 +43,20 @@
                     <input placeholder="search project">
                 </form>
             </div>
-           
+
             <div class="add-project">
                 <i class="fa-solid fa-plus"></i>
               add project
             </div>
-        
+
         </header>
         <section class="projects">
+            <?php foreach($projects as $project): ?>
             <div id="project-1">
-                <img src="public/uploads/<?= $project->getImage() ?>">
+                <img src="public/uploads/<?= $project->getImage(); ?>">
                 <div>
-                    <h2><?= $project->getTitle() ?></h2>
-                    <p><?= $project->getDescription() ?></p>
+                    <h2><?= $project->getTitle(); ?></h2>
+                    <p><?= $project->getDescription(); ?></p>
                     <div class="social-section">
                         <div>
                             <i class="fas fa-heart"></i>
@@ -66,63 +67,10 @@
                             <span>101</span>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
-            <div id="project-1">
-                <img src="public/uploads/rw.jpg">
-                <div>
-                    <h2>Title</h2>
-                    <p>description</p>
-                    <div class="social-section">
-                        <div>
-                            <i class="fas fa-heart"></i>
-                            <span>600</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-minus-square"></i>
-                            <span>101</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div id="project-1">
-                <img src="public/uploads/rw.jpg">
-                <div>
-                    <h2>Title</h2>
-                    <p>description</p>
-                    <div class="social-section">
-                        <div>
-                            <i class="fas fa-heart"></i>
-                            <span>600</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-minus-square"></i>
-                            <span>101</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div id="project-1">
-                <img src="public/uploads/rw.jpg">
-                <div>
-                    <h2>Title</h2>
-                    <p>description</p>
-                    <div class="social-section">
-                        <div>
-                            <i class="fas fa-heart"></i>
-                            <span>600</span>
-                        </div>
-                        <div>
-                            <i class="fas fa-minus-square"></i>
-                            <span>101</span>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+            <?php endforeach; ?>
         </section>
       </main>
     </div>
